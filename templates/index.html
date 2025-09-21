@@ -1,0 +1,82 @@
+    <!-- templates/index.html -->
+    <!doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8"/>
+    <title>LLM Autocomplete Demo (gpt2-medium)</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: Inter, Arial, sans-serif; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .input-wrap { position: relative; width: 100%; }
+        textarea#editor {
+        width: 100%;
+        height: 120px;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+        line-height: 1.4;
+        resize: vertical;
+        font-family: monospace;
+        }
+        /* Ghost overlay */
+    .input-wrap {
+  position: relative;
+  width: 100%;
+}
+#editor {
+  position: relative;
+  background: transparent;
+  width: 100%; height: 120px;
+  font-family: monospace;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  resize: vertical;
+  z-index: 2; /* stays above ghost */
+}
+#ghost {
+  position: absolute;
+  top: 10px; left: 10px;
+  right: 10px; bottom: 10px;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(0,0,0,0.35);
+  pointer-events: none;
+  z-index: 1; /* stays under editor text */
+}
+        .suggestions {
+        margin-top: 8px;
+        display:flex; gap:6px; flex-wrap:wrap;
+        }
+        .chip {
+        padding:6px 10px; background:#f1f1f1; border-radius:6px; cursor:pointer;
+        }
+        .info { color: #666; font-size: 13px; margin-top: 8px; }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Autocomplete demo — gpt2-medium (local)</h2>
+        <p>Type — suggestions appear inline as ghost text. Press <strong>Tab</strong> to accept a suggestion. Suggestions also show below.</p>
+
+        <!-- <div class="input-wrap">
+    <div id="ghost" contenteditable="true" spellcheck="false" ></div>
+    <textarea id="editor" placeholder="Start typing..."></textarea>
+    </div> -->
+
+    <div class="input-wrap">
+        <textarea id="editor"></textarea>
+        <div id="ghost"></div>
+        </div>
+
+
+        <div class="suggestions" id="suggestions"></div>
+        <div class="info" id="status">Status: disconnected</div>
+    </div>
+
+    <script src="/static/client.js"></script>
+    </body>
+    </html>

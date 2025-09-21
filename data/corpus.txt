@@ -1,0 +1,41 @@
+# Python Basics
+Python is a high-level, interpreted programming language.
+Python supports object-oriented, functional, and procedural programming.
+Python has built-in data structures like lists, dictionaries, sets, and tuples.
+Python uses indentation to define code blocks.
+Python's standard libraries include math, random, datetime, and os.
+Python supports exception handling using try, except, finally blocks.
+Python functions can have default arguments, *args, and **kwargs.
+Python supports file I/O operations like open(), read(), write(), and close().
+
+# Python Advanced
+Python supports list comprehensions and dictionary comprehensions.
+Python supports decorators to modify the behavior of functions or classes.
+Python has modules and packages to organize code.
+Python supports generators using the yield keyword.
+Python supports context managers using the with statement.
+Python supports multithreading and multiprocessing for concurrency.
+
+# AI Basics
+Artificial Intelligence (AI) is the simulation of human intelligence in machines.
+Machine Learning (ML) is a subset of AI that allows systems to learn from data.
+Deep Learning (DL) is a subset of ML that uses neural networks with many layers.
+Supervised learning uses labeled data to train models.
+Unsupervised learning finds patterns in unlabeled data.
+Reinforcement learning trains agents using rewards and penalties.
+Common AI algorithms include linear regression, decision trees, and k-means clustering.
+
+# Python for AI
+Python libraries for AI include NumPy, Pandas, Matplotlib, and Seaborn.
+Python libraries for ML include scikit-learn, TensorFlow, and PyTorch.
+Python can be used to preprocess data, build models, and visualize results.
+Python supports neural network implementation using frameworks like Keras.
+Python allows model evaluation using metrics like accuracy, precision, recall, and F1-score.
+Python supports saving and loading models using joblib, pickle, or framework-specific functions.
+
+# Python AI Tips
+Vectorized operations in NumPy are faster than loops.
+Use train-test split to evaluate machine learning models.
+Normalize or standardize data for better model performance.
+Use GPU acceleration for training deep learning models.
+Document your AI code clearly for reproducibility.
