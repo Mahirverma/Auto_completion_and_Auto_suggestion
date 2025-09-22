@@ -11,8 +11,24 @@ This project is a **real-time autocomplete system** that uses:
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/llm-autocomplete.git
-cd llm-autocomplete
+git clone https://github.com/Mahirverma/Auto_completion_and_Auto_suggestion.git
+cd Auto_completion_and_Auto_suggestion
+```
+
+### 2. Create a python virtual environment using cmd terminal
+```bash
+python -m -venv .venv
+.venv\scripts\activate
+```
+
+### 3. Install the dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the application via uvicorn
+```bash
+uvicorn main:app --reload
 ```
